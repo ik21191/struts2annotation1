@@ -8,6 +8,7 @@
 <title>Welcome Page</title>
 </head>
 <body>
-<h3>Welcome <s:property value="name"></s:property></h3>
+<h3>Welcome <s:property value="name"></s:property></h3><br/>
+Welcome page.
 </body>
 </html>

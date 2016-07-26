@@ -13,15 +13,23 @@ import org.apache.struts2.convention.annotation.Result;
  *
  */
 @Namespaces(value={@Namespace("/User"),@Namespace("/")})
-@Action(value = "login", results = {
-		@Result(name = "SUCCESS", location = "/welcome.jsp"),
-		@Result(name = "ERROR", location = "/error.jsp") })
-public class LoginAction {
 
+public class LoginAction {
+	
+	@Action(value = "login", results = {
+			@Result(name = "SUCCESS", location = "/welcome.jsp"),
+			@Result(name = "ERROR", location = "/error.jsp") })
 	public String execute() throws Exception {
 		if("pankaj".equals(getName()) && "admin".equals(getPwd()))
 		return "SUCCESS";
 		else return "ERROR";
+	}
+	
+	@Action(value = "loginTest", results = {
+			@Result(name = "SUCCESS", location = "/welcome.jsp"),
+			@Result(name = "ERROR", location = "/error.jsp") })
+	public String executeTest() throws Exception {
+			return "SUCCESS";
 	}
 	
 	//Java Bean to hold the form parameters
