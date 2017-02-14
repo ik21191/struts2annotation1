@@ -3,3 +3,11 @@ org.eclipse.jdt.core.prefs
 org.eclipse.wst.common.component
 org.eclipse.wst.common.project.facet.core.xml
 org.maven.ide.eclipse.prefs
+*.class
+*.jar
+
+struts2annotation1
+surefire
+maven-archiver
+*.war
+classes

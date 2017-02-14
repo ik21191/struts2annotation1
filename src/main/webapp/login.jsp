@@ -16,6 +16,6 @@
 	<s:submit value="Login"></s:submit>
 </s:form>
 <br/><a href="test">test usging struts.xml</a><br/>
-<br/><a href="test">different method same action class</a><br/>
+<br/><a href="loginTest">different method same action class</a><br/>
 </body>
 </html>
