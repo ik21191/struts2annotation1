@@ -11,7 +11,8 @@ public class WildCardAction {
 	private String prm;
 	@Action(value = "/wild/*",params={"prm","{1}"}, results = {
 			@Result(name = "SUCCESS", location = "/welcome.jsp"),
-			@Result(name = "ERROR", location = "/error.jsp") })
+			@Result(name = "ERROR", location = "/error.jsp"),
+			@Result(name = "REDIRECT", location = "http://localhost:8080", type = "redirect")})
 	public String execute() throws Exception {
 		System.out.println("Value of parameter is : " + prm);
 		return "SUCCESS";
