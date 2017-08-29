@@ -30,7 +30,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>struts21</finalName>
+		<finalName>struts2annotation1</finalName>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
